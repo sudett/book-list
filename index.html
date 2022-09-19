@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <script defer type="module" src="./app.js "></script>
+    <title>Book List</title>
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="message__container">
+        <p class="error"></p>
+        <p class="success"></p>
+      </div>
+      <h1 class="title"><i class="book-icon fa-solid fa-book-open"></i>My book List</h1>
+      <form class="form">
+        <div class="form__group">
+          <input class="form__input form__title" type="text" id="title" name="title" placeholder=" "/>
+          <label class="form__label" for="title">Title</label>
+        </div>
+        <div class="form__group">
+          <input class="form__input form__author" type="text" id="author" name="author" placeholder=" "/>
+          <label class="form__label" for="author">Author</label>
+        </div>
+        <div class="form__group">
+          <input class="form__input form__isbn" type="text" id="isbn" name="isbn" placeholder=" "/>
+          <label class="form__label" for="isbn">ISBN</label>
+        </div>
+        <button class="btn btn--submit" type="submit">Submit</button>
+      </form>
+
+      <table class="table">
+        <thead class="table__head">
+          <tr class="table__row">
+            <td class="table__data">Title</td>
+            <td class="table__data">Author</td>
+            <td class="table__data">ISBN</td>
+            <td class="table__data"></td>
+          </tr>
+        </thead>
+        <tbody class="table__body">
+          <!-- <tr data-isbn="8970">
+            <td>book1</td>
+            <td>John</td>
+            <td>8970</td>
+            <td>
+              <button class="btn btn--trash">
+                <i class="trash-icon fa-solid fa-trash"></i>
+              </button>
+              <button class="btn btn--edit">
+                <i class="edit-icon fa-solid fa-pen"></i>
+              </button>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
